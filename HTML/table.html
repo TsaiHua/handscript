@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>table</title>
+  </head>
+  <body>
+    <!-- 水平表格 -->
+    <table border="1">
+      <!-- 带标题 (caption) 的表格 跨列-->
+      <caption>带标题 (caption) 的表格</caption>
+      <!-- <colgroup>
+       <col span="2" style="background-color:red">
+       <col style="background-color:yellow">
+     </colgroup> -->
+      <tr>
+        <th>name</th>
+        <th colspan="2">age</th>
+      </tr>
+      <tr>
+        <td><img src="../assests/kidding me.png" alt="sinery"></td>
+        <td>26</td>
+        <td>
+          <table border="1" cellpadding="4" cellspacing="5">
+            <!-- thead -->
+            <thead>
+              <tr>
+                <th>inner th</th>
+                <th>inner2 th</th>
+              </tr>
+            </thead>
+            <!-- tbody -->
+            <tbody>
+              <tr>
+                <td>inner td:
+                  <ul>
+                    <li>li1</li>
+                    <li>li2</li>
+                    <li>li3</li>
+                  </ul>
+                </td>
+                <td>inner td2:
+                  <img src="../assests/kidding me.png" alt="">
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>tfoot</td>
+                <td>tfoot2</td>
+              </tr>
+            </tfoot>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p></p>
+
+    <!-- 垂直表格 跨行 -->
+    <table border="2" cellpadding="20" cellspacing="0">
+      <tr>
+        <th>name:</th>
+        <td>tdtd</td>
+      </tr>
+      <tr>
+        <th rowspan="3">age:</th>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>26</td>
+      </tr>
+    </table>
+  </body>
+</html>

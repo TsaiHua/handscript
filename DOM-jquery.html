@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <script type="text/javascript" src="./jquery-1.9.1.js"></script>
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script type="text/javascript">
+      var div = document.getElementsByTagName('div')
+      var $div = $(div)
+      var $first = $div.first()
+      $first.css('color','blue').css('backgroundColor','gray').css('border','solid 2px red')
+    </script>
+  </body>
+</html>

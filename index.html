@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>搭建jQuery环境</title>
+    <script type="text/javascript" src="./jquery-1.9.1.js"></script>
+  </head>
+  <body>
+    <p id="test">fdsa</p>
+    <p id="test2"></p>
+    <p id="test3"></p>
+    <!-- 原生JS语法 -->
+    <script type="text/javascript">
+      window.onload = function () {
+        var p = document.getElementById('test')
+        p.innerHTML ='你好。'
+        p.style.color ='red'
+      }
+    </script>
+
+    <!-- 搭建jQuery -->
+    <script type="text/javascript">
+    // alert($)
+    </script>
+
+    <!-- jQuery语法 -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var $p = $('#test2')
+        $p.html('hi').css('color','blue')
+      })
+    </script>
+
+    <!-- jQuery语法 -->
+    <script type="text/javascript">
+      var $p = $('p')
+      var p = $p[2]
+      p.innerHTML = 'red.'
+      p.style.backgroundColor = 'red'
+    </script>
+
+
+  </body>
+</html>
