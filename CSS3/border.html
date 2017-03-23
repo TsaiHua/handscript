@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>html5</title>
+    <style>
+
+    #div1{
+      border:15px solid transparent;
+    	width:250px;
+    	padding:30px 20px;
+      -webkit-border-image:url(../assests/borderimg.png) 30 30 round; /* Safari 5 and older */
+    	-o-border-image:url(../assests/borderimg.png) 30 30 round; /* Opera */
+    	border-image:url(../assests/borderimg.png) 30 30 round;
+    }
+    #div2{
+      border:15px solid transparent;
+    	width:250px;
+    	padding:30px 20px;
+      -webkit-border-image:url(../assests/borderimg.png) 30 30 stretch; /* Safari 5 and older */
+    	-o-border-image:url(../assests/borderimg.png) 30 30 stretch; /* Opera */
+    	border-image:url(../assests/borderimg.png) 30 30 stretch;
+    }
+    #div3{
+      border: 1px solid #9E9E9E;
+    }
+    </style>
+  </head>
+  <body>
+  <div id="div1">你好。这是一个 DIV 元素。round</div>
+  <div id="div2">你好。这是一个 DIV 元素。stretch</div>
+  <div id="div3">你好。 <img src="../assests/borderimg.png" alt=""></div>
+
+  <dl class="">
+    <h4><dt> border-radius - 指定每个圆角:</dt></h4>
+    <li>四个值: 第一个值为左上角，第二个值为右上角，第三个值为右下角，第四个值为左下角。</li>
+    <li>三个值: 第一个值为左上角, 第二个值为右上角和左下角，第三个值为右下角</li>
+    <li>两个值: 第一个值为左上角与右下角，第二个值为右上角与左下角</li>
+    <li>一个值： 四个圆角值相同</li>
+  </dl>
+
+  
+  </body>
+</html>

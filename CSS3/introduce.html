@@ -3,17 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>html5</title>
+    <style>
+    #div1{
+    	height:75px;
+      width: 150px;
+    	background-color:red;
+    	border:1px solid black;
+      border-radius: 25px;
+    }
+    #div2{
+      height: 100px;
+      width: 150px;
+      background-color: blue;
+    	transform:rotate(10deg);
+    	-ms-transform:rotate(30deg); /* IE 9 */
+    	-webkit-transform:rotate(60deg); /* Safari and Chrome */
+      border-radius: 15px;
+      box-shadow: 10px 10px 20px #888;
+    }
+    #div3{
+      height: 50px;
+      width: 150px;
+      background-color: gray;
+      border: 1px solid black;
+    }
+    </style>
   </head>
   <body>
-    <p>HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。</p>
-    <p>HTML5的设计目的是为了在移动设备上支持多媒体。</p>
-    <h4>HTML5 中的一些有趣的新特性：</h4>
-    <ul>
-      <li>用于绘画的 canvas 元素</li>
-      <li>用于媒介回放的 video 和 audio 元素</li>
-      <li>对本地离线存储的更好的支持</li>
-      <li>新的特殊内容元素，比如 article、footer、header、nav、section</li>
-      <li>新的表单控件，比如 calendar、date、time、email、url、search</li>
-    </ul>
+  <div id="div1">你好。这是一个 DIV 元素。</div>
+  <div id="div2">你好。这是一个 DIV 元素。</div>
+  <div id="div3">你好。这是一个 DIV 元素。</div>
   </body>
 </html>
