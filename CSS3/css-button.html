@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>button</title>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.type_text{
+  line-height: 1.5;
+  width: 80px;
+}
+.no_allowed{
+  cursor: not-allowed;
+  opacity:.6
+}
+</style>
+</head>
+<body>
+
+<h2>CSS 按钮</h2>
+
+<button>默认按钮</button>
+<a href="#" class="button">链接按钮</a>
+<button class="button">按钮</button><br>
+<input type="button" class="button" value="输入框按钮">
+<input type="button" class="button" value="输入框按钮">
+<input type="button" class="button" value="输入框按钮"><br>
+<input type="button" class="button" value="输入框按钮">
+<input type="button" class="button no_allowed" value="输入框按钮">
+<input type="text" class="button type_text" placeholder="输入框按钮">
+
+</body>
+</html>
