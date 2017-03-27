@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src = "max.js"></script>
     <style media="screen">
       #tot{
         color: #ff0000;
@@ -10,11 +11,29 @@
     </style>
   </head>
   <body>
-    <p id="tot">srcsrcsrcsrcsrc</p>
+    <p id="tot">srcsrc</p>
+
+    <form class="tot" action="imgsrc.html" method="get">
+      <input type="number" name="fform" value="" placeholder="telephone num" required="required">
+      <input type="week" name="weekform" value="">
+      <input type="date" name="dform" value="">
+      <input type="submit" name="sform" value="submitt">
+    </form>
+
+    <a href="javascript:void(0)">"myFunction()"</a><br>
+    <a href="#top">"myFunction()"</a><br>
+    <a href="#" id="top">"myFunction()"</a><br>
+
     <script type="text/javascript">
-      document.write("<h1>totsai</h1>")
+      // document.write("<h1>totsai</h1>")
       var src = document.getElementById('tot')
-      src.innerHTML="fjdkfjl"+(new Date()).getFullYear()
+      src.innerHTML="hi,"+(new Date()).getFullYear()
+    </script>
+
+    <p id="maxp">max:</p>
+    <script type="text/javascript">
+      var arr = [1, 123, 500, 115, 44, 88];
+      document.getElementById('maxp').innerHTML = findMax(1,0,123)
     </script>
   </body>
 </html>

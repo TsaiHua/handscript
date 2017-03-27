@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 防止IE浏览器进入怪异文档模式，兼容性视图 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bing search</title>
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script> -->
+    <script src="../jquery-1.9.1.js"></script>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: #333;
+      }
+      .bg-div{
+        background-image: url(../assests/MountOTemanu_1920x1080.jpg);
+        width: 1228px;
+        height: 690px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .logo{
+        background-image: url(../assests/binglogo.png);
+        width: 107px;
+        height: 53px;
+        float: left;
+        margin: -4px 18px 0 0;
+      }
+      form{
+        float: left;
+        background-color: #fff;
+        padding: 5px;
+      }
+      .search-text{
+        border: 0;
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        outline: none;
+        width: 350px;
+        font-size: 22px;
+      }
+      .search-submit{
+        border: 0;
+        background-image: url(../assests/search-button.png);
+        width: 29px;
+        height: 29px;
+        float: left;
+      }
+      .search-box{
+        position: absolute;
+        top:200px;
+        left: 300px;
+      }
+      .suggest{
+        position: absolute;
+        top: 245px;
+        left:425px;
+      }
+      .suggest ul{
+        list-style: none;
+        background-color: #fff;
+        width: 388px;
+        line-height: 29px;
+        border: 1px solid #999;
+        padding-left: 5px;
+      }
+      .suggest ul li:hover{
+        cursor:pointer;
+        background-color: #e5e5e5;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-div">
+      <div class="search-box">
+        <div class="logo"></div>
+        <form class="" action="javascript:void(0)" method="post">
+          <input class="search-text" id="search_input" type="text" name="txt" value="">
+          <input class="search-submit" type="submit" name="sub" value="">
+        </form>
+      </div>
+
+    <div class="suggest" id="suggest" style="display:none;">
+      <ul class="suggest-ul">
+        <li>suggest one</li>
+        <li>suggest two</li>
+        <li>suggest tree</li>
+      </ul>
+    </div>
+
+  </div>
+  <script>
+    $('#search_input').bind('keyup',function () {
+      $('#suggest').show()
+    })
+  </script>
+  </body>
+</html>
