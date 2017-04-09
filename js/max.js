@@ -1,4 +1,5 @@
 function findMax() {
+function findMax() {
     let max = arguments[0];
     if (arguments.length < 2) {
       return max;
