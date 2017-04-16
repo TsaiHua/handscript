@@ -28,14 +28,17 @@ tryIt()
 // var again = my.increment(3)
 // console.log(again)
 
-
+// 定义个构造器
 // var Person = function(name){
 //   this.name = name;
 //   this.toString = 22;
 // }
+
+// 在原型上扩充
 // Person.prototype.showName = function(){
 //   return this.name
 // }
+// new一个实例
 // var guy = new Person('jack')
 // console.log(guy.showName())
 

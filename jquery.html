@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>jf</title>
+    <script src="jquery-1.9.1.js"></script>
     <style>
         
     </style>
@@ -14,24 +15,25 @@
     </div>
 
     <script type="text/javascript">
-        var body = document.querySelector('body');
-        document.addEventListener('click',function(){
-	    	//创建2个div元素
-		    var fatherDiv = document.createElement('div')
-		    var sonDiv = document.createElement("div");
 
-		    //给2个div设置不同的属性
-		    fatherDiv.setAttribute('class', 'father')
-		    sonDiv.className = 'son'
-		    sonDiv.innerHTML = "我是动态创建的DIV元素节点";
+        // var body = document.querySelector('body');
+        // document.addEventListener('click',function(){
+	    // 	//创建2个div元素
+		//     var fatherDiv = document.createElement('div')
+		//     var sonDiv = document.createElement("div");
 
-		    //2个div合并成包含关系
-		    fatherDiv.appendChild(sonDiv)
+		//     //给2个div设置不同的属性
+		//     fatherDiv.setAttribute('class', 'father')
+		//     sonDiv.className = 'son'
+		//     sonDiv.innerHTML = "我是动态创建的DIV元素节点";
+
+		//     //2个div合并成包含关系
+		//     fatherDiv.appendChild(sonDiv)
 		   	
-		   	//绘制到页面body
-		   	body.appendChild(fatherDiv)
+		//    	//绘制到页面body
+		//    	body.appendChild(fatherDiv)
 
-	    },false)
+	    // },false)
     </script>
 </body>
 </html>

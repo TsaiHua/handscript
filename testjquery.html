@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>jf</title>
+    <script src="jquery-1.9.1.js"></script>
+    <style>
+    	*{margin:0;padding: 0;}
+
+    	li{
+    		list-style: none;
+    	}
+    	a{
+    		text-decoration: none;
+    	}
+    </style>
+</head>
+<body> 
+  <script type="text/javascript">
+     $(document).ready(function() {
+     	$('p').html("changed")
+     	$('ul li a').on('mouseover', function() {
+     		event.preventDefault();
+     		$(this).css('color','red')
+     	});
+     	$('ul li').on('mouseout', function() {
+     		event.preventDefault();
+     		$(this).css('color','black')
+     		/* Act on the event */
+     	});
+     	$('li').eq(2).on('click', function() {
+     		$(this).css('fontSize','18px')
+     		/* Act on the event */
+     	});
+     });
+
+  </script>
+<ul>
+  <li href="#"><a href="#">list item 1</a></li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+</ul>
+<p id="tot">a paragraph</p>
+</body>
+</html>
